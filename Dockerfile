@@ -18,8 +18,8 @@ COPY base.txt /app
 COPY requirements.txt /app
 
 #安装Python程序运行的依赖库
-RUN cd /app && pip install -r base.txt
-RUN cd /app && pip install -r requirements.txt
+RUN cd /trade && pip install -r base.txt
+RUN cd /trade && pip install -r requirements.txt
 
 
 EXPOSE 80
