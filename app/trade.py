@@ -8,6 +8,9 @@ if __name__ == '__main__':
     hs = HuobiServices()
     result = hs.get_balance('935082')
 
+    print('test')
     for i in range(0, len(result['data']['list'])):
         if result['data']['list'][i]['currency'] == 'xrp':
             print(result['data']['list'][i])
+
+
