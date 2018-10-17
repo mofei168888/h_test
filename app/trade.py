@@ -1,8 +1,13 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from core.huobi.Huobi_Services import *
-from core.Logger import *
+
+try:
+    from core.huobi.Huobi_Services import *
+    from core.Logger import *
+except Exception as e:
+    from huobi.Huobi_Services import *
+    from Logger import *
 
 if __name__ == '__main__':
     hs = HuobiServices()
